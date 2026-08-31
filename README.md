@@ -57,10 +57,9 @@ A pre-built `.exe` is included in the `build` directory. On some Windows 11 syst
 
 Before building, you will need:
 
-* Windows
 * MinGW (or another supported C++ compiler)
-* GLFW
-* FreeType
+* GLFW (included in clone)
+* FreeType (included in clone)
 * Git
 
 ### Build Instructions
