@@ -138,4 +138,4 @@ Despite these simple rules, the system can produce stable structures, oscillator
 
 ## License
 
-*Add your license information here.*
+*GNU General Public License v3.0*
