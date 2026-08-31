@@ -1,0 +1,174 @@
+#include "GameEngine.h"
+
+float green[4] = {0.0f, 1.0f, 0.0f, 1.0f};
+
+
+
+GameEngine* GameEngine::Instance()
+{
+	static GameEngine instance{};
+	//std::cout << &instance << std::endl;
+	return &instance;
+}
+
+
+GameEngine::~GameEngine()
+{
+	delete m_renderer;
+	delete m_assetMan;
+	//m_renderer = nullptr;
+
+
+}
+
+
+void GameEngine::Init()
+{
+
+	m_running = true;
+
+	m_assetMan = new assetMan();
+	m_renderer = new Renderer();
+	m_renderer->Init();
+	//m_scenes["play"] = std::make_unique<Scene_Play>(this, m_renderer, 10000);
+	//m_scenes["CGoL"] = std::make_unique<Scene_CGoL>(this, m_renderer, 30000);
+	//m_scenes["test"] = std::make_unique<Scene_test>(this, m_renderer, 1000);
+	//m_factory->Init();
+	InputHandler::Instance();
+	InputHandler::Instance().Init();
+	m_assetMan->addFont("IBM", "fonts/short/Mx437_IBM_3270pc.ttf");
+	
+	
+}
+
+
+void GameEngine::update()
+{
+
+}
+
+
+void GameEngine::run()
+{
+	double currentTime, elapsedTime;
+	//m_renderer->initTextBuffer(4);
+	//m_renderer->CGoLMemory();
+	changeScene<Scene_CGoL>("CGoL", m_renderer, (192*105));
+	//size_t EES = 1000;
+	//changeScene<Scene_test>("test", m_renderer, 50);
+	//currentScene()->init();
+	//These two lines of code handle memory setup and scene deployment of the falling sand demo. 
+	//m_renderer->fallingSandMemory();
+	//changeScene<Scene_Play>("play", m_renderer);
+	while(m_running)
+	{
+		currentTime = glfwGetTime();
+		//m_entityMan->update();
+		GameEngine::sUserInput();
+		std::cout << "Pre-update loop" << std::endl;
+		currentScene()->update();
+		std::cout << "Pre render loop" << std::endl;
+		currentScene()->sRender();
+		std::cout << "Post render loop" << std::endl;
+		currentScene()->sDoAction();
+
+		elapsedTime = glfwGetTime();
+		double dt = elapsedTime - currentTime;
+		int FPS_ = 1/dt;
+
+		//std::cout << "FPS: " << FPS_ << std::endl;
+		//std::cout << "Total entities: " << EntityMemoryPool::Instance()->getNumEntities() << std::endl;
+		//std::cout << m_currentFrame << std::endl;
+		if(m_engineOverlay)
+		{
+			std::string sFPS = "FPS: " + std::to_string(FPS_);
+			m_renderer->drawText(sFPS, 1790.0f, 1000.0f, "IBM", 0.5f, green);
+		}
+
+		m_renderer->SwapBuffers();
+	}
+}
+
+
+void GameEngine::quit()
+{
+
+	m_running = false;
+}
+
+
+/*void GameEngine::spawnEnemy()
+{
+	auto e = m_entityMan.addEntity("sand");
+}*/
+
+/*template <typename T, typename... Args>
+void GameEngine::changeScene(const std::string name, Args&&... args)
+{
+	m_scenes[name] = std::make_unique<T>(this, std::forward<Args>(args)...);
+	m_currentScene = name;
+}*/
+
+Scene* GameEngine::currentScene() {
+	return m_scenes.count(m_currentScene) ? m_scenes[m_currentScene].get() : nullptr;
+}
+
+
+Renderer* GameEngine::getRenderer()
+{
+	return m_renderer;
+}
+
+
+/*EntityMemoryPool* GameEngine::getPool()
+{
+	return m_pool;
+}
+
+
+EntityMan* GameEngine::getEntityMan()
+{
+	return m_entityMan;
+}
+
+
+EntityFactory* GameEngine::getFactory()
+{
+	return m_factory;
+}
+*/
+
+assetMan* GameEngine::getAssetMan()
+{
+	return m_assetMan;
+}
+
+void GameEngine::sUserInput()
+{
+
+	glfwPollEvents();
+	//m_handler->processInput(m_renderer->getWindow());
+}
+
+
+/*aMap* GameEngine::getAM()
+{
+	return m_actionMap;
+}*/
+
+unsigned int GameEngine::getUniqueRID()
+{
+	return m_numRenderers++;
+}	
+
+void GameEngine::toggleOverlay()
+{
+	if(m_engineOverlay)
+	{
+		m_engineOverlay = false;
+	}
+	else
+	{
+		m_engineOverlay = true;
+	}
+}
