@@ -23,6 +23,7 @@ Conway's Game of Life is a cellular automaton where simple rules governing neigh
 | --------------------- | ------------------------- |
 | **Space**             | Toggle pause / resume     |
 | **F3**                | Toggle the engine overlay |
+| **O**                 | Randomize the grid state  |
 | **Left Mouse Button** | Toggle a cell's state     |
 | **Escape**            | Exit the game             |
 

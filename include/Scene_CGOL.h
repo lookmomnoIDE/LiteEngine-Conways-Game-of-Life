@@ -11,6 +11,8 @@
 #include "GeometryConstructor.h"
 
 #include <iostream>
+#include <random>
+#include <chrono>
 
 class Scene_CGoL : public Scene
 {

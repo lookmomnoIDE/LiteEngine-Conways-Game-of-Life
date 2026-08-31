@@ -189,11 +189,16 @@ bool Scene_CGoL::isPaused()
 
 void Scene_CGoL::doAction(const Action& a)
 {
-	if (a.type() == "START")
+	if(a.type() == "START")
 	{
-		if (a.name() == "_LMB")
+		if(a.name() == "_LMB")
 		{
 			m_primaryActionActive = true;
+		}
+		if(a.name() == "_O")
+		{
+			srand(std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count());
+			grid.randomizeGrid();
 		}
 
 		if(a.name() == "SPACE")
@@ -212,6 +217,7 @@ void Scene_CGoL::doAction(const Action& a)
 		{
 			m_game->toggleOverlay();
 		}
+
 	}
 	if(a.type() == "END")
 	{

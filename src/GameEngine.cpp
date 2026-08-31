@@ -90,6 +90,7 @@ void GameEngine::run()
 			m_renderer->drawText(sFPS, 1790.0f, 1000.0f, "IBM", 0.5f, green);
 		}
 		m_frameCount++;
+		srand(std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count());
 		m_renderer->SwapBuffers();
 	}
 }
