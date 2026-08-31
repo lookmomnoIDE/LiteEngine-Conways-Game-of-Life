@@ -1,5 +1,5 @@
-cd C:\projects\LiteEngineV003\build
-LiteEngine.exe
-cd C:\projects\LiteEngineV003
+cd C:\projects\ConwayGameofLife\build
+CGoL.exe
+cd C:\projects\ConwayGameofLife
 
 

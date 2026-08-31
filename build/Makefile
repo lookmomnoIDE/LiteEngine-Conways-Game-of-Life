@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\projects\LiteEngineV003
+CMAKE_SOURCE_DIR = C:\projects\ConwayGameofLife
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\projects\LiteEngineV003\build
+CMAKE_BINARY_DIR = C:\projects\ConwayGameofLife\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\projects\LiteEngineV003\build\CMakeFiles C:\projects\LiteEngineV003\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\projects\ConwayGameofLife\build\CMakeFiles C:\projects\ConwayGameofLife\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\projects\LiteEngineV003\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\projects\ConwayGameofLife\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LiteEngine
+# Target rules for targets named CGoL
 
 # Build rule for target.
-LiteEngine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LiteEngine
-.PHONY : LiteEngine
+CGoL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CGoL
+.PHONY : CGoL
 
 # fast build rule for target.
-LiteEngine/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/build
-.PHONY : LiteEngine/fast
+CGoL/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/build
+.PHONY : CGoL/fast
 
 src/CTransform.obj: src/CTransform.cpp.obj
 .PHONY : src/CTransform.obj
 
 # target to build an object file
 src/CTransform.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/CTransform.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/CTransform.cpp.obj
 .PHONY : src/CTransform.cpp.obj
 
 src/CTransform.i: src/CTransform.cpp.i
@@ -141,7 +141,7 @@ src/CTransform.i: src/CTransform.cpp.i
 
 # target to preprocess a source file
 src/CTransform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/CTransform.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/CTransform.cpp.i
 .PHONY : src/CTransform.cpp.i
 
 src/CTransform.s: src/CTransform.cpp.s
@@ -149,7 +149,7 @@ src/CTransform.s: src/CTransform.cpp.s
 
 # target to generate assembly for a file
 src/CTransform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/CTransform.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/CTransform.cpp.s
 .PHONY : src/CTransform.cpp.s
 
 src/Cgrain.obj: src/Cgrain.cpp.obj
@@ -157,7 +157,7 @@ src/Cgrain.obj: src/Cgrain.cpp.obj
 
 # target to build an object file
 src/Cgrain.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Cgrain.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Cgrain.cpp.obj
 .PHONY : src/Cgrain.cpp.obj
 
 src/Cgrain.i: src/Cgrain.cpp.i
@@ -165,7 +165,7 @@ src/Cgrain.i: src/Cgrain.cpp.i
 
 # target to preprocess a source file
 src/Cgrain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Cgrain.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Cgrain.cpp.i
 .PHONY : src/Cgrain.cpp.i
 
 src/Cgrain.s: src/Cgrain.cpp.s
@@ -173,7 +173,7 @@ src/Cgrain.s: src/Cgrain.cpp.s
 
 # target to generate assembly for a file
 src/Cgrain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Cgrain.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Cgrain.cpp.s
 .PHONY : src/Cgrain.cpp.s
 
 src/Cgravity.obj: src/Cgravity.cpp.obj
@@ -181,7 +181,7 @@ src/Cgravity.obj: src/Cgravity.cpp.obj
 
 # target to build an object file
 src/Cgravity.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Cgravity.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Cgravity.cpp.obj
 .PHONY : src/Cgravity.cpp.obj
 
 src/Cgravity.i: src/Cgravity.cpp.i
@@ -189,7 +189,7 @@ src/Cgravity.i: src/Cgravity.cpp.i
 
 # target to preprocess a source file
 src/Cgravity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Cgravity.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Cgravity.cpp.i
 .PHONY : src/Cgravity.cpp.i
 
 src/Cgravity.s: src/Cgravity.cpp.s
@@ -197,7 +197,7 @@ src/Cgravity.s: src/Cgravity.cpp.s
 
 # target to generate assembly for a file
 src/Cgravity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Cgravity.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Cgravity.cpp.s
 .PHONY : src/Cgravity.cpp.s
 
 src/Components.obj: src/Components.cpp.obj
@@ -205,7 +205,7 @@ src/Components.obj: src/Components.cpp.obj
 
 # target to build an object file
 src/Components.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Components.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Components.cpp.obj
 .PHONY : src/Components.cpp.obj
 
 src/Components.i: src/Components.cpp.i
@@ -213,7 +213,7 @@ src/Components.i: src/Components.cpp.i
 
 # target to preprocess a source file
 src/Components.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Components.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Components.cpp.i
 .PHONY : src/Components.cpp.i
 
 src/Components.s: src/Components.cpp.s
@@ -221,7 +221,7 @@ src/Components.s: src/Components.cpp.s
 
 # target to generate assembly for a file
 src/Components.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Components.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Components.cpp.s
 .PHONY : src/Components.cpp.s
 
 src/Csand.obj: src/Csand.cpp.obj
@@ -229,7 +229,7 @@ src/Csand.obj: src/Csand.cpp.obj
 
 # target to build an object file
 src/Csand.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Csand.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Csand.cpp.obj
 .PHONY : src/Csand.cpp.obj
 
 src/Csand.i: src/Csand.cpp.i
@@ -237,7 +237,7 @@ src/Csand.i: src/Csand.cpp.i
 
 # target to preprocess a source file
 src/Csand.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Csand.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Csand.cpp.i
 .PHONY : src/Csand.cpp.i
 
 src/Csand.s: src/Csand.cpp.s
@@ -245,7 +245,7 @@ src/Csand.s: src/Csand.cpp.s
 
 # target to generate assembly for a file
 src/Csand.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Csand.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Csand.cpp.s
 .PHONY : src/Csand.cpp.s
 
 src/Entity.obj: src/Entity.cpp.obj
@@ -253,7 +253,7 @@ src/Entity.obj: src/Entity.cpp.obj
 
 # target to build an object file
 src/Entity.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Entity.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Entity.cpp.obj
 .PHONY : src/Entity.cpp.obj
 
 src/Entity.i: src/Entity.cpp.i
@@ -261,7 +261,7 @@ src/Entity.i: src/Entity.cpp.i
 
 # target to preprocess a source file
 src/Entity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Entity.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Entity.cpp.i
 .PHONY : src/Entity.cpp.i
 
 src/Entity.s: src/Entity.cpp.s
@@ -269,7 +269,7 @@ src/Entity.s: src/Entity.cpp.s
 
 # target to generate assembly for a file
 src/Entity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Entity.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Entity.cpp.s
 .PHONY : src/Entity.cpp.s
 
 src/EntityFactory.obj: src/EntityFactory.cpp.obj
@@ -277,7 +277,7 @@ src/EntityFactory.obj: src/EntityFactory.cpp.obj
 
 # target to build an object file
 src/EntityFactory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/EntityFactory.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/EntityFactory.cpp.obj
 .PHONY : src/EntityFactory.cpp.obj
 
 src/EntityFactory.i: src/EntityFactory.cpp.i
@@ -285,7 +285,7 @@ src/EntityFactory.i: src/EntityFactory.cpp.i
 
 # target to preprocess a source file
 src/EntityFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/EntityFactory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/EntityFactory.cpp.i
 .PHONY : src/EntityFactory.cpp.i
 
 src/EntityFactory.s: src/EntityFactory.cpp.s
@@ -293,7 +293,7 @@ src/EntityFactory.s: src/EntityFactory.cpp.s
 
 # target to generate assembly for a file
 src/EntityFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/EntityFactory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/EntityFactory.cpp.s
 .PHONY : src/EntityFactory.cpp.s
 
 src/EntityManager.obj: src/EntityManager.cpp.obj
@@ -301,7 +301,7 @@ src/EntityManager.obj: src/EntityManager.cpp.obj
 
 # target to build an object file
 src/EntityManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/EntityManager.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/EntityManager.cpp.obj
 .PHONY : src/EntityManager.cpp.obj
 
 src/EntityManager.i: src/EntityManager.cpp.i
@@ -309,7 +309,7 @@ src/EntityManager.i: src/EntityManager.cpp.i
 
 # target to preprocess a source file
 src/EntityManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/EntityManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/EntityManager.cpp.i
 .PHONY : src/EntityManager.cpp.i
 
 src/EntityManager.s: src/EntityManager.cpp.s
@@ -317,7 +317,7 @@ src/EntityManager.s: src/EntityManager.cpp.s
 
 # target to generate assembly for a file
 src/EntityManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/EntityManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/EntityManager.cpp.s
 .PHONY : src/EntityManager.cpp.s
 
 src/EntityMemoryPool.obj: src/EntityMemoryPool.cpp.obj
@@ -325,7 +325,7 @@ src/EntityMemoryPool.obj: src/EntityMemoryPool.cpp.obj
 
 # target to build an object file
 src/EntityMemoryPool.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/EntityMemoryPool.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/EntityMemoryPool.cpp.obj
 .PHONY : src/EntityMemoryPool.cpp.obj
 
 src/EntityMemoryPool.i: src/EntityMemoryPool.cpp.i
@@ -333,7 +333,7 @@ src/EntityMemoryPool.i: src/EntityMemoryPool.cpp.i
 
 # target to preprocess a source file
 src/EntityMemoryPool.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/EntityMemoryPool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/EntityMemoryPool.cpp.i
 .PHONY : src/EntityMemoryPool.cpp.i
 
 src/EntityMemoryPool.s: src/EntityMemoryPool.cpp.s
@@ -341,7 +341,7 @@ src/EntityMemoryPool.s: src/EntityMemoryPool.cpp.s
 
 # target to generate assembly for a file
 src/EntityMemoryPool.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/EntityMemoryPool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/EntityMemoryPool.cpp.s
 .PHONY : src/EntityMemoryPool.cpp.s
 
 src/FTexture.obj: src/FTexture.cpp.obj
@@ -349,7 +349,7 @@ src/FTexture.obj: src/FTexture.cpp.obj
 
 # target to build an object file
 src/FTexture.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/FTexture.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/FTexture.cpp.obj
 .PHONY : src/FTexture.cpp.obj
 
 src/FTexture.i: src/FTexture.cpp.i
@@ -357,7 +357,7 @@ src/FTexture.i: src/FTexture.cpp.i
 
 # target to preprocess a source file
 src/FTexture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/FTexture.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/FTexture.cpp.i
 .PHONY : src/FTexture.cpp.i
 
 src/FTexture.s: src/FTexture.cpp.s
@@ -365,7 +365,7 @@ src/FTexture.s: src/FTexture.cpp.s
 
 # target to generate assembly for a file
 src/FTexture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/FTexture.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/FTexture.cpp.s
 .PHONY : src/FTexture.cpp.s
 
 src/GameEngine.obj: src/GameEngine.cpp.obj
@@ -373,7 +373,7 @@ src/GameEngine.obj: src/GameEngine.cpp.obj
 
 # target to build an object file
 src/GameEngine.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/GameEngine.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/GameEngine.cpp.obj
 .PHONY : src/GameEngine.cpp.obj
 
 src/GameEngine.i: src/GameEngine.cpp.i
@@ -381,7 +381,7 @@ src/GameEngine.i: src/GameEngine.cpp.i
 
 # target to preprocess a source file
 src/GameEngine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/GameEngine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/GameEngine.cpp.i
 .PHONY : src/GameEngine.cpp.i
 
 src/GameEngine.s: src/GameEngine.cpp.s
@@ -389,7 +389,7 @@ src/GameEngine.s: src/GameEngine.cpp.s
 
 # target to generate assembly for a file
 src/GameEngine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/GameEngine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/GameEngine.cpp.s
 .PHONY : src/GameEngine.cpp.s
 
 src/IndexBuffer.obj: src/IndexBuffer.cpp.obj
@@ -397,7 +397,7 @@ src/IndexBuffer.obj: src/IndexBuffer.cpp.obj
 
 # target to build an object file
 src/IndexBuffer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/IndexBuffer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/IndexBuffer.cpp.obj
 .PHONY : src/IndexBuffer.cpp.obj
 
 src/IndexBuffer.i: src/IndexBuffer.cpp.i
@@ -405,7 +405,7 @@ src/IndexBuffer.i: src/IndexBuffer.cpp.i
 
 # target to preprocess a source file
 src/IndexBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/IndexBuffer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/IndexBuffer.cpp.i
 .PHONY : src/IndexBuffer.cpp.i
 
 src/IndexBuffer.s: src/IndexBuffer.cpp.s
@@ -413,7 +413,7 @@ src/IndexBuffer.s: src/IndexBuffer.cpp.s
 
 # target to generate assembly for a file
 src/IndexBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/IndexBuffer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/IndexBuffer.cpp.s
 .PHONY : src/IndexBuffer.cpp.s
 
 src/InputHandler.obj: src/InputHandler.cpp.obj
@@ -421,7 +421,7 @@ src/InputHandler.obj: src/InputHandler.cpp.obj
 
 # target to build an object file
 src/InputHandler.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/InputHandler.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/InputHandler.cpp.obj
 .PHONY : src/InputHandler.cpp.obj
 
 src/InputHandler.i: src/InputHandler.cpp.i
@@ -429,7 +429,7 @@ src/InputHandler.i: src/InputHandler.cpp.i
 
 # target to preprocess a source file
 src/InputHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/InputHandler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/InputHandler.cpp.i
 .PHONY : src/InputHandler.cpp.i
 
 src/InputHandler.s: src/InputHandler.cpp.s
@@ -437,7 +437,7 @@ src/InputHandler.s: src/InputHandler.cpp.s
 
 # target to generate assembly for a file
 src/InputHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/InputHandler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/InputHandler.cpp.s
 .PHONY : src/InputHandler.cpp.s
 
 src/Invoker.obj: src/Invoker.cpp.obj
@@ -445,7 +445,7 @@ src/Invoker.obj: src/Invoker.cpp.obj
 
 # target to build an object file
 src/Invoker.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Invoker.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Invoker.cpp.obj
 .PHONY : src/Invoker.cpp.obj
 
 src/Invoker.i: src/Invoker.cpp.i
@@ -453,7 +453,7 @@ src/Invoker.i: src/Invoker.cpp.i
 
 # target to preprocess a source file
 src/Invoker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Invoker.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Invoker.cpp.i
 .PHONY : src/Invoker.cpp.i
 
 src/Invoker.s: src/Invoker.cpp.s
@@ -461,7 +461,7 @@ src/Invoker.s: src/Invoker.cpp.s
 
 # target to generate assembly for a file
 src/Invoker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Invoker.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Invoker.cpp.s
 .PHONY : src/Invoker.cpp.s
 
 src/Library.obj: src/Library.cpp.obj
@@ -469,7 +469,7 @@ src/Library.obj: src/Library.cpp.obj
 
 # target to build an object file
 src/Library.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Library.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Library.cpp.obj
 .PHONY : src/Library.cpp.obj
 
 src/Library.i: src/Library.cpp.i
@@ -477,7 +477,7 @@ src/Library.i: src/Library.cpp.i
 
 # target to preprocess a source file
 src/Library.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Library.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Library.cpp.i
 .PHONY : src/Library.cpp.i
 
 src/Library.s: src/Library.cpp.s
@@ -485,7 +485,7 @@ src/Library.s: src/Library.cpp.s
 
 # target to generate assembly for a file
 src/Library.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Library.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Library.cpp.s
 .PHONY : src/Library.cpp.s
 
 src/Parser.obj: src/Parser.cpp.obj
@@ -493,7 +493,7 @@ src/Parser.obj: src/Parser.cpp.obj
 
 # target to build an object file
 src/Parser.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Parser.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Parser.cpp.obj
 .PHONY : src/Parser.cpp.obj
 
 src/Parser.i: src/Parser.cpp.i
@@ -501,7 +501,7 @@ src/Parser.i: src/Parser.cpp.i
 
 # target to preprocess a source file
 src/Parser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Parser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Parser.cpp.i
 .PHONY : src/Parser.cpp.i
 
 src/Parser.s: src/Parser.cpp.s
@@ -509,7 +509,7 @@ src/Parser.s: src/Parser.cpp.s
 
 # target to generate assembly for a file
 src/Parser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Parser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Parser.cpp.s
 .PHONY : src/Parser.cpp.s
 
 src/Renderer.obj: src/Renderer.cpp.obj
@@ -517,7 +517,7 @@ src/Renderer.obj: src/Renderer.cpp.obj
 
 # target to build an object file
 src/Renderer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Renderer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Renderer.cpp.obj
 .PHONY : src/Renderer.cpp.obj
 
 src/Renderer.i: src/Renderer.cpp.i
@@ -525,7 +525,7 @@ src/Renderer.i: src/Renderer.cpp.i
 
 # target to preprocess a source file
 src/Renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Renderer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Renderer.cpp.i
 .PHONY : src/Renderer.cpp.i
 
 src/Renderer.s: src/Renderer.cpp.s
@@ -533,7 +533,7 @@ src/Renderer.s: src/Renderer.cpp.s
 
 # target to generate assembly for a file
 src/Renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Renderer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Renderer.cpp.s
 .PHONY : src/Renderer.cpp.s
 
 src/Scene.obj: src/Scene.cpp.obj
@@ -541,7 +541,7 @@ src/Scene.obj: src/Scene.cpp.obj
 
 # target to build an object file
 src/Scene.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Scene.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Scene.cpp.obj
 .PHONY : src/Scene.cpp.obj
 
 src/Scene.i: src/Scene.cpp.i
@@ -549,7 +549,7 @@ src/Scene.i: src/Scene.cpp.i
 
 # target to preprocess a source file
 src/Scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Scene.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Scene.cpp.i
 .PHONY : src/Scene.cpp.i
 
 src/Scene.s: src/Scene.cpp.s
@@ -557,7 +557,7 @@ src/Scene.s: src/Scene.cpp.s
 
 # target to generate assembly for a file
 src/Scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Scene.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Scene.cpp.s
 .PHONY : src/Scene.cpp.s
 
 src/Scene_CGOL.obj: src/Scene_CGOL.cpp.obj
@@ -565,7 +565,7 @@ src/Scene_CGOL.obj: src/Scene_CGOL.cpp.obj
 
 # target to build an object file
 src/Scene_CGOL.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Scene_CGOL.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Scene_CGOL.cpp.obj
 .PHONY : src/Scene_CGOL.cpp.obj
 
 src/Scene_CGOL.i: src/Scene_CGOL.cpp.i
@@ -573,7 +573,7 @@ src/Scene_CGOL.i: src/Scene_CGOL.cpp.i
 
 # target to preprocess a source file
 src/Scene_CGOL.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Scene_CGOL.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Scene_CGOL.cpp.i
 .PHONY : src/Scene_CGOL.cpp.i
 
 src/Scene_CGOL.s: src/Scene_CGOL.cpp.s
@@ -581,7 +581,7 @@ src/Scene_CGOL.s: src/Scene_CGOL.cpp.s
 
 # target to generate assembly for a file
 src/Scene_CGOL.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Scene_CGOL.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Scene_CGOL.cpp.s
 .PHONY : src/Scene_CGOL.cpp.s
 
 src/Scene_test.obj: src/Scene_test.cpp.obj
@@ -589,7 +589,7 @@ src/Scene_test.obj: src/Scene_test.cpp.obj
 
 # target to build an object file
 src/Scene_test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Scene_test.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Scene_test.cpp.obj
 .PHONY : src/Scene_test.cpp.obj
 
 src/Scene_test.i: src/Scene_test.cpp.i
@@ -597,7 +597,7 @@ src/Scene_test.i: src/Scene_test.cpp.i
 
 # target to preprocess a source file
 src/Scene_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Scene_test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Scene_test.cpp.i
 .PHONY : src/Scene_test.cpp.i
 
 src/Scene_test.s: src/Scene_test.cpp.s
@@ -605,7 +605,7 @@ src/Scene_test.s: src/Scene_test.cpp.s
 
 # target to generate assembly for a file
 src/Scene_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Scene_test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Scene_test.cpp.s
 .PHONY : src/Scene_test.cpp.s
 
 src/Shader.obj: src/Shader.cpp.obj
@@ -613,7 +613,7 @@ src/Shader.obj: src/Shader.cpp.obj
 
 # target to build an object file
 src/Shader.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Shader.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Shader.cpp.obj
 .PHONY : src/Shader.cpp.obj
 
 src/Shader.i: src/Shader.cpp.i
@@ -621,7 +621,7 @@ src/Shader.i: src/Shader.cpp.i
 
 # target to preprocess a source file
 src/Shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Shader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Shader.cpp.i
 .PHONY : src/Shader.cpp.i
 
 src/Shader.s: src/Shader.cpp.s
@@ -629,7 +629,7 @@ src/Shader.s: src/Shader.cpp.s
 
 # target to generate assembly for a file
 src/Shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Shader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Shader.cpp.s
 .PHONY : src/Shader.cpp.s
 
 src/Texture.obj: src/Texture.cpp.obj
@@ -637,7 +637,7 @@ src/Texture.obj: src/Texture.cpp.obj
 
 # target to build an object file
 src/Texture.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Texture.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Texture.cpp.obj
 .PHONY : src/Texture.cpp.obj
 
 src/Texture.i: src/Texture.cpp.i
@@ -645,7 +645,7 @@ src/Texture.i: src/Texture.cpp.i
 
 # target to preprocess a source file
 src/Texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Texture.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Texture.cpp.i
 .PHONY : src/Texture.cpp.i
 
 src/Texture.s: src/Texture.cpp.s
@@ -653,7 +653,7 @@ src/Texture.s: src/Texture.cpp.s
 
 # target to generate assembly for a file
 src/Texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/Texture.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/Texture.cpp.s
 .PHONY : src/Texture.cpp.s
 
 src/VertexArray.obj: src/VertexArray.cpp.obj
@@ -661,7 +661,7 @@ src/VertexArray.obj: src/VertexArray.cpp.obj
 
 # target to build an object file
 src/VertexArray.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/VertexArray.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/VertexArray.cpp.obj
 .PHONY : src/VertexArray.cpp.obj
 
 src/VertexArray.i: src/VertexArray.cpp.i
@@ -669,7 +669,7 @@ src/VertexArray.i: src/VertexArray.cpp.i
 
 # target to preprocess a source file
 src/VertexArray.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/VertexArray.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/VertexArray.cpp.i
 .PHONY : src/VertexArray.cpp.i
 
 src/VertexArray.s: src/VertexArray.cpp.s
@@ -677,7 +677,7 @@ src/VertexArray.s: src/VertexArray.cpp.s
 
 # target to generate assembly for a file
 src/VertexArray.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/VertexArray.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/VertexArray.cpp.s
 .PHONY : src/VertexArray.cpp.s
 
 src/VertexBuffer.obj: src/VertexBuffer.cpp.obj
@@ -685,7 +685,7 @@ src/VertexBuffer.obj: src/VertexBuffer.cpp.obj
 
 # target to build an object file
 src/VertexBuffer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/VertexBuffer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/VertexBuffer.cpp.obj
 .PHONY : src/VertexBuffer.cpp.obj
 
 src/VertexBuffer.i: src/VertexBuffer.cpp.i
@@ -693,7 +693,7 @@ src/VertexBuffer.i: src/VertexBuffer.cpp.i
 
 # target to preprocess a source file
 src/VertexBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/VertexBuffer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/VertexBuffer.cpp.i
 .PHONY : src/VertexBuffer.cpp.i
 
 src/VertexBuffer.s: src/VertexBuffer.cpp.s
@@ -701,7 +701,7 @@ src/VertexBuffer.s: src/VertexBuffer.cpp.s
 
 # target to generate assembly for a file
 src/VertexBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/VertexBuffer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/VertexBuffer.cpp.s
 .PHONY : src/VertexBuffer.cpp.s
 
 src/VertexBufferLayout.obj: src/VertexBufferLayout.cpp.obj
@@ -709,7 +709,7 @@ src/VertexBufferLayout.obj: src/VertexBufferLayout.cpp.obj
 
 # target to build an object file
 src/VertexBufferLayout.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/VertexBufferLayout.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/VertexBufferLayout.cpp.obj
 .PHONY : src/VertexBufferLayout.cpp.obj
 
 src/VertexBufferLayout.i: src/VertexBufferLayout.cpp.i
@@ -717,7 +717,7 @@ src/VertexBufferLayout.i: src/VertexBufferLayout.cpp.i
 
 # target to preprocess a source file
 src/VertexBufferLayout.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/VertexBufferLayout.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/VertexBufferLayout.cpp.i
 .PHONY : src/VertexBufferLayout.cpp.i
 
 src/VertexBufferLayout.s: src/VertexBufferLayout.cpp.s
@@ -725,7 +725,7 @@ src/VertexBufferLayout.s: src/VertexBufferLayout.cpp.s
 
 # target to generate assembly for a file
 src/VertexBufferLayout.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/VertexBufferLayout.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/VertexBufferLayout.cpp.s
 .PHONY : src/VertexBufferLayout.cpp.s
 
 src/assetManager.obj: src/assetManager.cpp.obj
@@ -733,7 +733,7 @@ src/assetManager.obj: src/assetManager.cpp.obj
 
 # target to build an object file
 src/assetManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/assetManager.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/assetManager.cpp.obj
 .PHONY : src/assetManager.cpp.obj
 
 src/assetManager.i: src/assetManager.cpp.i
@@ -741,7 +741,7 @@ src/assetManager.i: src/assetManager.cpp.i
 
 # target to preprocess a source file
 src/assetManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/assetManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/assetManager.cpp.i
 .PHONY : src/assetManager.cpp.i
 
 src/assetManager.s: src/assetManager.cpp.s
@@ -749,7 +749,7 @@ src/assetManager.s: src/assetManager.cpp.s
 
 # target to generate assembly for a file
 src/assetManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/assetManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/assetManager.cpp.s
 .PHONY : src/assetManager.cpp.s
 
 src/glad.obj: src/glad.c.obj
@@ -757,7 +757,7 @@ src/glad.obj: src/glad.c.obj
 
 # target to build an object file
 src/glad.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/glad.c.obj
 .PHONY : src/glad.c.obj
 
 src/glad.i: src/glad.c.i
@@ -765,7 +765,7 @@ src/glad.i: src/glad.c.i
 
 # target to preprocess a source file
 src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/glad.c.i
 .PHONY : src/glad.c.i
 
 src/glad.s: src/glad.c.s
@@ -773,7 +773,7 @@ src/glad.s: src/glad.c.s
 
 # target to generate assembly for a file
 src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
 src/imgui.obj: src/imgui.cpp.obj
@@ -781,7 +781,7 @@ src/imgui.obj: src/imgui.cpp.obj
 
 # target to build an object file
 src/imgui.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui.cpp.obj
 .PHONY : src/imgui.cpp.obj
 
 src/imgui.i: src/imgui.cpp.i
@@ -789,7 +789,7 @@ src/imgui.i: src/imgui.cpp.i
 
 # target to preprocess a source file
 src/imgui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui.cpp.i
 .PHONY : src/imgui.cpp.i
 
 src/imgui.s: src/imgui.cpp.s
@@ -797,7 +797,7 @@ src/imgui.s: src/imgui.cpp.s
 
 # target to generate assembly for a file
 src/imgui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui.cpp.s
 .PHONY : src/imgui.cpp.s
 
 src/imgui_demo.obj: src/imgui_demo.cpp.obj
@@ -805,7 +805,7 @@ src/imgui_demo.obj: src/imgui_demo.cpp.obj
 
 # target to build an object file
 src/imgui_demo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_demo.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_demo.cpp.obj
 .PHONY : src/imgui_demo.cpp.obj
 
 src/imgui_demo.i: src/imgui_demo.cpp.i
@@ -813,7 +813,7 @@ src/imgui_demo.i: src/imgui_demo.cpp.i
 
 # target to preprocess a source file
 src/imgui_demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_demo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_demo.cpp.i
 .PHONY : src/imgui_demo.cpp.i
 
 src/imgui_demo.s: src/imgui_demo.cpp.s
@@ -821,7 +821,7 @@ src/imgui_demo.s: src/imgui_demo.cpp.s
 
 # target to generate assembly for a file
 src/imgui_demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_demo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_demo.cpp.s
 .PHONY : src/imgui_demo.cpp.s
 
 src/imgui_draw.obj: src/imgui_draw.cpp.obj
@@ -829,7 +829,7 @@ src/imgui_draw.obj: src/imgui_draw.cpp.obj
 
 # target to build an object file
 src/imgui_draw.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_draw.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_draw.cpp.obj
 .PHONY : src/imgui_draw.cpp.obj
 
 src/imgui_draw.i: src/imgui_draw.cpp.i
@@ -837,7 +837,7 @@ src/imgui_draw.i: src/imgui_draw.cpp.i
 
 # target to preprocess a source file
 src/imgui_draw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_draw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_draw.cpp.i
 .PHONY : src/imgui_draw.cpp.i
 
 src/imgui_draw.s: src/imgui_draw.cpp.s
@@ -845,7 +845,7 @@ src/imgui_draw.s: src/imgui_draw.cpp.s
 
 # target to generate assembly for a file
 src/imgui_draw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_draw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_draw.cpp.s
 .PHONY : src/imgui_draw.cpp.s
 
 src/imgui_impl_glfw.obj: src/imgui_impl_glfw.cpp.obj
@@ -853,7 +853,7 @@ src/imgui_impl_glfw.obj: src/imgui_impl_glfw.cpp.obj
 
 # target to build an object file
 src/imgui_impl_glfw.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_impl_glfw.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_impl_glfw.cpp.obj
 .PHONY : src/imgui_impl_glfw.cpp.obj
 
 src/imgui_impl_glfw.i: src/imgui_impl_glfw.cpp.i
@@ -861,7 +861,7 @@ src/imgui_impl_glfw.i: src/imgui_impl_glfw.cpp.i
 
 # target to preprocess a source file
 src/imgui_impl_glfw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_impl_glfw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_impl_glfw.cpp.i
 .PHONY : src/imgui_impl_glfw.cpp.i
 
 src/imgui_impl_glfw.s: src/imgui_impl_glfw.cpp.s
@@ -869,7 +869,7 @@ src/imgui_impl_glfw.s: src/imgui_impl_glfw.cpp.s
 
 # target to generate assembly for a file
 src/imgui_impl_glfw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_impl_glfw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_impl_glfw.cpp.s
 .PHONY : src/imgui_impl_glfw.cpp.s
 
 src/imgui_impl_opengl3.obj: src/imgui_impl_opengl3.cpp.obj
@@ -877,7 +877,7 @@ src/imgui_impl_opengl3.obj: src/imgui_impl_opengl3.cpp.obj
 
 # target to build an object file
 src/imgui_impl_opengl3.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_impl_opengl3.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_impl_opengl3.cpp.obj
 .PHONY : src/imgui_impl_opengl3.cpp.obj
 
 src/imgui_impl_opengl3.i: src/imgui_impl_opengl3.cpp.i
@@ -885,7 +885,7 @@ src/imgui_impl_opengl3.i: src/imgui_impl_opengl3.cpp.i
 
 # target to preprocess a source file
 src/imgui_impl_opengl3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_impl_opengl3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_impl_opengl3.cpp.i
 .PHONY : src/imgui_impl_opengl3.cpp.i
 
 src/imgui_impl_opengl3.s: src/imgui_impl_opengl3.cpp.s
@@ -893,7 +893,7 @@ src/imgui_impl_opengl3.s: src/imgui_impl_opengl3.cpp.s
 
 # target to generate assembly for a file
 src/imgui_impl_opengl3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_impl_opengl3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_impl_opengl3.cpp.s
 .PHONY : src/imgui_impl_opengl3.cpp.s
 
 src/imgui_tables.obj: src/imgui_tables.cpp.obj
@@ -901,7 +901,7 @@ src/imgui_tables.obj: src/imgui_tables.cpp.obj
 
 # target to build an object file
 src/imgui_tables.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_tables.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_tables.cpp.obj
 .PHONY : src/imgui_tables.cpp.obj
 
 src/imgui_tables.i: src/imgui_tables.cpp.i
@@ -909,7 +909,7 @@ src/imgui_tables.i: src/imgui_tables.cpp.i
 
 # target to preprocess a source file
 src/imgui_tables.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_tables.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_tables.cpp.i
 .PHONY : src/imgui_tables.cpp.i
 
 src/imgui_tables.s: src/imgui_tables.cpp.s
@@ -917,7 +917,7 @@ src/imgui_tables.s: src/imgui_tables.cpp.s
 
 # target to generate assembly for a file
 src/imgui_tables.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_tables.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_tables.cpp.s
 .PHONY : src/imgui_tables.cpp.s
 
 src/imgui_widgets.obj: src/imgui_widgets.cpp.obj
@@ -925,7 +925,7 @@ src/imgui_widgets.obj: src/imgui_widgets.cpp.obj
 
 # target to build an object file
 src/imgui_widgets.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_widgets.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_widgets.cpp.obj
 .PHONY : src/imgui_widgets.cpp.obj
 
 src/imgui_widgets.i: src/imgui_widgets.cpp.i
@@ -933,7 +933,7 @@ src/imgui_widgets.i: src/imgui_widgets.cpp.i
 
 # target to preprocess a source file
 src/imgui_widgets.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_widgets.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_widgets.cpp.i
 .PHONY : src/imgui_widgets.cpp.i
 
 src/imgui_widgets.s: src/imgui_widgets.cpp.s
@@ -941,7 +941,7 @@ src/imgui_widgets.s: src/imgui_widgets.cpp.s
 
 # target to generate assembly for a file
 src/imgui_widgets.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/imgui_widgets.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/imgui_widgets.cpp.s
 .PHONY : src/imgui_widgets.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -949,7 +949,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -957,7 +957,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -965,8 +965,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiteEngine.dir\build.make CMakeFiles/LiteEngine.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/miniaudio.obj: src/miniaudio.c.obj
+.PHONY : src/miniaudio.obj
+
+# target to build an object file
+src/miniaudio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/miniaudio.c.obj
+.PHONY : src/miniaudio.c.obj
+
+src/miniaudio.i: src/miniaudio.c.i
+.PHONY : src/miniaudio.i
+
+# target to preprocess a source file
+src/miniaudio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/miniaudio.c.i
+.PHONY : src/miniaudio.c.i
+
+src/miniaudio.s: src/miniaudio.c.s
+.PHONY : src/miniaudio.s
+
+# target to generate assembly for a file
+src/miniaudio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CGoL.dir\build.make CMakeFiles/CGoL.dir/src/miniaudio.c.s
+.PHONY : src/miniaudio.c.s
 
 # Help Target
 help:
@@ -976,7 +1000,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... LiteEngine
+	@echo ... CGoL
 	@echo ... src/CTransform.obj
 	@echo ... src/CTransform.i
 	@echo ... src/CTransform.s
@@ -1082,6 +1106,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/miniaudio.obj
+	@echo ... src/miniaudio.i
+	@echo ... src/miniaudio.s
 .PHONY : help
 
 

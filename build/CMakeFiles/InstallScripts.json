@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/projects/LiteEngineV003/build/cmake_install.cmake"
+		"C:/projects/ConwayGameofLife/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

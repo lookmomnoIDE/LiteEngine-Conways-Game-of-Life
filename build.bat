@@ -1,3 +1,3 @@
-cd C:\projects\LiteEngineV003\build
+cd C:\projects\ConwayGameofLife\build
 cmake --build . 
-cd C:\projects\LiteEngineV003
+cd C:\projects\ConwayGameofLife

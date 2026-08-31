@@ -32,7 +32,7 @@ Renderer::Renderer()
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	m_window = glfwCreateWindow(m_width, m_height, "LiteEngine", NULL, NULL);
+	m_window = glfwCreateWindow(m_width, m_height, "Conways Game of Life!", NULL, NULL);
 	if (m_window == NULL)
 	{
 		std::cout << "ERROR: " << "GLFW window failed!" << std::endl;

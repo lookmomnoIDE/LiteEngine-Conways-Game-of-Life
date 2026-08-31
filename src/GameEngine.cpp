@@ -62,7 +62,8 @@ void GameEngine::run()
 	//changeScene<Scene_Play>("play", m_renderer);
 	while(m_running)
 	{
-		currentTime = glfwGetTime();
+		//auto currentSeconds = std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch());
+		//auto now = std::chrono::steady_clock::now();
 		//m_entityMan->update();
 		GameEngine::sUserInput();
 		std::cout << "Pre-update loop" << std::endl;
@@ -72,19 +73,23 @@ void GameEngine::run()
 		std::cout << "Post render loop" << std::endl;
 		currentScene()->sDoAction();
 
-		elapsedTime = glfwGetTime();
-		double dt = elapsedTime - currentTime;
-		int FPS_ = 1/dt;
-
-		//std::cout << "FPS: " << FPS_ << std::endl;
-		//std::cout << "Total entities: " << EntityMemoryPool::Instance()->getNumEntities() << std::endl;
-		//std::cout << m_currentFrame << std::endl;
+		
 		if(m_engineOverlay)
 		{
-			std::string sFPS = "FPS: " + std::to_string(FPS_);
+			if(m_frameCount >= 60)
+			{
+        		auto now = std::chrono::steady_clock::now();
+        		std::chrono::duration<double> dt = now - m_fpsWindowStart;
+		
+        		FPS_ = (((double)m_frameCount) / dt.count());
+				
+				m_fpsWindowStart = now;
+        		m_frameCount = 0;
+    		}
+			std::string sFPS = "FPS: " + std::to_string((unsigned int)FPS_);
 			m_renderer->drawText(sFPS, 1790.0f, 1000.0f, "IBM", 0.5f, green);
 		}
-
+		m_frameCount++;
 		m_renderer->SwapBuffers();
 	}
 }

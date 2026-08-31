@@ -7,8 +7,11 @@
 #include <stdexcept>
 //I dont know where <vector> is and at this point I'm too afraid to ask :D
 
+
+//don't ask, I know, this is on the list:)
 Vec4<float> visibleColor = {1.0f, 1.0f, 1.0f, 1.0f};
 Vec4<float> invisibleColor = {1.0f, 1.0f, 1.0f, 0.0f};
+float cred[4] = {1.0f, 0.0f, 0.0f, 1.0f};
 
 Scene_CGoL::Scene_CGoL(GameEngine* game, Renderer* renderer, size_t maxEntities) 
 	:Scene(game, renderer, maxEntities)//m_game(game), m_renderer(renderer), m_maxEntities(maxEntities)
@@ -17,6 +20,8 @@ Scene_CGoL::Scene_CGoL(GameEngine* game, Renderer* renderer, size_t maxEntities)
 	Scene_CGoL::registerAction(GLFW_KEY_ESCAPE, "ESC");
 	Scene_CGoL::registerAction(GLFW_KEY_P, "_P");
 	Scene_CGoL::registerAction(GLFW_KEY_O, "_O");
+	Scene_CGoL::registerAction(GLFW_KEY_SPACE, "SPACE");
+	Scene_CGoL::registerAction(GLFW_KEY_F3, "_F3");
 }
 
 
@@ -136,7 +141,7 @@ void Scene_CGoL::update()
 			}
 		}
 	}
-	m_renderer->updateQuadBuffer(1, m_quads);
+	m_renderer->updateQuadBuffer(2, m_quads);
 	
 	
 }
@@ -164,7 +169,11 @@ void Scene_CGoL::sRender()
 {
 	m_renderer->Clear();
 	m_renderer->DrawElements();
-	m_renderer->SwapBuffers();
+	if(m_paused)
+	{
+		m_renderer->drawText("Paused", ((1920.0/2.0f)-5.0f), ((1050.0f/2.0f)-10.0f), "IBM", 1.0f, cred); 
+	}
+	//m_renderer->SwapBuffers();
 }
 
 
@@ -178,7 +187,7 @@ bool Scene_CGoL::isPaused()
 	return m_paused;
 }
 
-void Scene_test::doAction(const Action& a)
+void Scene_CGoL::doAction(const Action& a)
 {
 	if (a.type() == "START")
 	{

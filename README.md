@@ -1,53 +1,141 @@
-# LiteNGINE
+# Conway's Game of Life
 
-LiteNGINE is a high-performance, data-oriented 2D game engine built around an Entity Component System (ECS) architecture. Designed with scalability and efficiency in mind, the engine is capable of managing **100,000+ entities** and dozens of component types on modest hardware while maintaining responsive performance.
+A fully functional implementation of **Conway's Game of Life**, built from the ground up using my custom **LiteEngine** game engine.
 
-The engine combines modern ECS principles with practical object-oriented systems where appropriate, creating a flexible foundation for both simulation-heavy applications and traditional games.
+![Conway's Game of Life](/media/CGoL.gif)
 
+Conway's Game of Life is a cellular automaton where simple rules governing neighboring cells produce surprisingly complex behavior. This project serves as both a playable implementation of the simulation and an example of what LiteEngine is capable of.
 
 ## Features
 
-* **Data-Oriented ECS Architecture**
+* Fully functional Conway's Game of Life simulation
+* Interactive cell placement
+* Pause and resume simulation
+* Real-time engine overlay with FPS display
+* Built using my custom **LiteEngine** engine
+* Lightweight and designed to run on modest hardware
 
-  * Cache-friendly component storage
-  * Efficient system execution
-  * Designed for large-scale simulations
+---
 
-* **High Entity Counts**
+## Controls
 
-  * Supports 100k+ active entities
-  * Optimized for minimal hardware requirements
-  * Suitable for particle systems, cellular automata, and large game worlds
+| Key / Input           | Action                    |
+| --------------------- | ------------------------- |
+| **Space**             | Toggle pause / resume     |
+| **F3**                | Toggle the engine overlay |
+| **Left Mouse Button** | Toggle a cell's state     |
+| **Escape**            | Exit the game             |
 
-* **OpenGL Renderer**
+> **Note:** The engine overlay currently displays FPS information.
 
-  * Hardware-accelerated 2D rendering
-  * Modern graphics pipeline
-  * Extensible rendering framework
+---
 
-* **Hybrid Design Philosophy**
+## How to Play
 
-  * ECS for game data and simulation
-  * Object-oriented subsystems where they provide practical benefits
-  * Clean separation of data and behavior
+The simulation starts **unpaused**.
 
-## Planned Features
+If you want to create your own starting configuration:
 
-* **3D Rendering Support**
+1. Press **Space** to pause the simulation.
+2. Use the **Left Mouse Button** to activate or deactivate cells.
+3. Arrange the board however you like.
+4. Press **Space** again to resume the simulation.
+5. Watch your creation evolve according to Conway's rules.
 
-  * Future expansion to fully support 3D applications and games
+You can experiment with anything from simple patterns to large, chaotic configurations.
 
-* **Physics Engine**
+---
 
-  * Integrated physics simulation
-  * Example physics-based projects and demonstrations
+## Building
 
-* **Sample Applications**
+### Windows Only
 
-  * Conway's Game of Life
-  * Falling Sand simulation
-  * Additional ECS-focused examples and benchmarks
+A pre-built `.exe` is included in the `build` directory. On some Windows 11 systems, it may run without any additional setup. However, depending on your system configuration, you may need to build the project yourself.
 
-## Goals
+### Requirements
 
-LiteNGINE aims to provide a lightweight, educational, and performant foundation for developers interested in modern game engine architecture, large-scale simulations, and data-oriented design. The project serves both as a practical game engine and as a platform for exploring high-performance programming techniques.
+Before building, you will need:
+
+* Windows
+* MinGW (or another supported C++ compiler)
+* GLFW
+* FreeType
+* Git
+
+### Build Instructions
+
+#### 1. Clone the repository
+
+Clone the repository to your local machine:
+
+```bash
+git clone <repository-url>
+cd <repository-directory>
+```
+
+#### 2. Configure dependencies
+
+The project currently uses **absolute paths** for GLFW and FreeType.
+
+Open the project's configuration files and update the GLFW and FreeType paths so that they point to the appropriate locations on your system.
+
+#### 3. Configure the compiler
+
+Open `config.bat`.
+
+If you are using MinGW, verify that it is installed and available through your system's PATH:
+
+```bash
+mingw --version
+```
+
+If you are using a different compiler, modify `config.bat` accordingly.
+
+#### 4. Build the project
+
+Run the following batch files in order:
+
+```text
+clean.bat
+config.bat
+build.bat
+```
+
+Check the output for any errors.
+
+If the build completes successfully, you can either run:
+
+```text
+run.bat
+```
+
+or navigate to the `build` directory and launch the generated `.exe` directly.
+
+---
+
+## About LiteEngine
+
+This project was built as an example application for **LiteEngine**, my custom game engine written in C++.
+
+LiteEngine is designed with performance and simplicity in mind, with a focus on data-oriented architecture and efficient handling of large numbers of entities. Conway's Game of Life provides a useful test case for the engine because the simulation can involve large numbers of cells being updated every frame.
+
+More projects and examples will be added as LiteEngine continues to develop.
+
+---
+
+## Conway's Game of Life
+
+The simulation follows the classic rules:
+
+1. A living cell with fewer than two living neighbors dies from underpopulation.
+2. A living cell with two or three living neighbors survives.
+3. A living cell with more than three living neighbors dies from overpopulation.
+4. A dead cell with exactly three living neighbors becomes alive.
+
+Despite these simple rules, the system can produce stable structures, oscillators, spaceships, and highly complex emergent behavior.
+
+---
+
+## License
+
+*Add your license information here.*

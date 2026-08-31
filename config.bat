@@ -1,2 +1,2 @@
-cd C:\projects\LiteEngineV003
+cd C:\projects\ConwayGameofLife
 cmake -G "MinGW Makefiles" -S . -B ./build

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project("LiteEngine")
+project("CGoL")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
@@ -10,15 +10,15 @@ add_library(glfw STATIC IMPORTED)
 add_library(freetype STATIC IMPORTED)
 
 set_target_properties(glfw PROPERTIES
-    IMPORTED_LOCATION "C:/projects/LiteEngineV003/lib/libglfw3.a"          # Linux/macOS
+    IMPORTED_LOCATION "C:/projects/ConwayGameofLife/lib/libglfw3.a"          # Linux/macOS
     # IMPORTED_LOCATION "C:/path/to/glfw3.lib"       # Windows
-    INTERFACE_INCLUDE_DIRECTORIES "C:/projects/LiteEngineV003/include/GLFW"
+    INTERFACE_INCLUDE_DIRECTORIES "C:/projects/ConwayGameofLife/include/GLFW"
 )
 
 #C:\projects\LiteEngineV003\ext\ft27\ft.compiled\lib
 set_target_properties(freetype PROPERTIES
-    IMPORTED_LOCATION "C:/projects/LiteEngineV003/ext/ft27/ft.compiled/lib/libfreetype.a"
-    INTERFACE_INCLUDE_DIRECTORIES "C:/projects/LiteEngineV003/ext/ft27/ft.compiled/include/freetype2"
+    IMPORTED_LOCATION "C:/projects/ConwayGameofLife/ext/ft27/ft.compiled/lib/libfreetype.a"
+    INTERFACE_INCLUDE_DIRECTORIES "C:/projects/ConwayGameofLife/ext/ft27/ft.compiled/include/freetype2"
     )
 
 
